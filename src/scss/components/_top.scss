@@ -1,0 +1,76 @@
+.top {
+	background-image: url("../../img/bg/top-bg.jpg");
+	display: flex;
+
+	&::before {
+		content: " ";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: radial-gradient(
+			45.97% 54.43% at 50% 45.57%,
+			rgba(23, 26, 28, 0) 50.28%,
+			rgba(23, 26, 28, 0.00225974) 50.29%,
+			rgba(4, 5, 5, 0.820343) 58.72%,
+			rgba(5, 5, 6, 0.792703) 80.08%,
+			#000000 87.89%
+		);
+		opacity: 0.4;
+	}
+
+	&__wrapper {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-self: stretch;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__title {
+		font-size: 96px;
+		line-height: 115px;
+		font-family: "SFProDisplay-Semibold", sans-serif;
+		margin-bottom: 25px;
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+
+	&__text {
+		margin: 25px 0 35px;
+		max-width: 325px;
+	}
+
+	&__social-list {
+		position: static;
+	}
+
+	&__social-item {
+		margin-right: 25px;
+		display: inline-block;
+	}
+
+	&__social-item:last-child {
+		margin-right: 0;
+	}
+
+	&__social-link {
+		opacity: 0.5;
+		transition: all 0.5s;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+	}
+}

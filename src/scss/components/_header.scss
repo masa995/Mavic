@@ -1,0 +1,98 @@
+.header {
+	position: fixed;
+	padding: 30px 0 15px;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 10;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 30px;
+		text-transform: uppercase;
+		font-size: 15px;
+		line-height: 17px;
+		font-family: "Ubuntu-Medium", sans-serif;
+	}
+
+	&__btn {
+		color: #fff;
+		background-color: transparent;
+		padding: 6px 28px;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		margin-right: 8px;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: all 0.5s;
+
+		&:hover,
+		&:focus {
+			color: #000;
+			background-color: #fff;
+		}
+	}
+
+	&__phone {
+		position: relative;
+		line-height: 18px;
+		font-size: 16px;
+		font-family: "Ubuntu-Bold", sans-serif;
+	}
+
+	&__phone::after {
+		content: " ";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 1.5px;
+		transition: all 0.5s;
+		background-color: #fff;
+	}
+
+	&__phone:hover::after,
+	&__phone:focus::after {
+		width: 100%;
+	}
+}
+
+.menu {
+	&__btn {
+		display: none;
+	}
+
+	&__list-item {
+		display: inline-block;
+
+		& + .menu__list-item {
+			margin-left: 20px;
+		}
+	}
+
+	&__list-phone {
+		display: none;
+	}
+
+	&__list-link {
+		position: relative;
+	}
+
+	&__list-link::after {
+		content: " ";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 1.5px;
+		transition: all 0.5s;
+		background-color: #fff;
+	}
+
+	&__list-link:hover::after,
+	&__list-link:focus::after {
+		width: 100%;
+	}
+}

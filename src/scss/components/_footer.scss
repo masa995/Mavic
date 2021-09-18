@@ -1,0 +1,17 @@
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	&__inner {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__copy {
+		margin: 0 0 30px;
+		font-size: 13px;
+		line-height: 17px;
+		opacity: 0.64;
+	}
+}

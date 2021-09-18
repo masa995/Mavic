@@ -1,0 +1,147 @@
+.top__title {
+	opacity: 0;
+	transition: all 0.5s ease 1.5s;
+}
+
+.top__img {
+	opacity: 0;
+	transition: all 1.5s ease 0.5s;
+	transform: translateY(-150%);
+}
+
+.top__text {
+	opacity: 0;
+	transition: all 0.5s ease 2s;
+}
+
+.top__conteiner-social-list {
+	opacity: 0;
+	transition: all 0.5s ease 2.2s;
+}
+
+.benefits__item:nth-child(1) {
+	opacity: 0;
+	transition: all 0.7s ease 0.5s;
+}
+
+.benefits__item:nth-child(2) {
+	opacity: 0;
+	transition: all 0.7s ease 2.5s;
+}
+
+.benefits__item:nth-child(3) {
+	opacity: 0;
+	transition: all 0.7s ease 4.5s;
+}
+
+.benefits__item:nth-child(4) {
+	opacity: 0;
+	transition: all 0.7s ease 6.5s;
+}
+
+.benefits__item-1::before {
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: all 1s ease 1s;
+}
+
+.benefits__item-2::before {
+	transform: translateX(100%);
+	opacity: 0;
+	transition: all 1s ease 3s;
+}
+
+.benefits__item-3::before {
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: all 1s ease 5s;
+}
+
+.specification__box-1 {
+	opacity: 0;
+	transition: all 0.7s ease 0.5s;
+}
+
+.specification__box-2 {
+	opacity: 0;
+	transition: all 0.7s ease 2s;
+}
+
+.specification__box-3 {
+	opacity: 0;
+	transition: all 0.7s ease 3s;
+}
+
+.specification__box-4 {
+	opacity: 0;
+	transition: all 0.7s ease 4s;
+}
+
+.specification__box-1::before {
+	opacity: 0;
+	transition: all 1s ease 1s;
+}
+
+.specification__box-2::before {
+	opacity: 0;
+	transition: all 1s ease 2.5s;
+}
+
+.specification__box-3::before {
+	opacity: 0;
+	transition: all 1s ease 3.5s;
+}
+
+.specification__box-4::before {
+	opacity: 0;
+	transition: all 0.5s ease 4.5s;
+}
+
+.top__title.animate {
+	opacity: 1;
+}
+
+.top__img.animate {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.top__text.animate {
+	opacity: 1;
+}
+
+.top__conteiner-social-list.animate {
+	opacity: 1;
+}
+
+.benefits__item.animate {
+	opacity: 1;
+}
+
+.benefits__item.animate .benefits__item-1::before,
+.benefits__item.animate .benefits__item-2::before,
+.benefits__item.animate .benefits__item-3::before {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.specification__box-1.animate,
+.specification__box-2.animate,
+.specification__box-3.animate,
+.specification__box-4.animate {
+	opacity: 1;
+}
+
+.animate.specification__box-1::before,
+.animate.specification__box-2::before,
+.animate.specification__box-3::before,
+.animate.specification__box-4::before {
+	opacity: 1;
+}
+
+.no-animate {
+	transition: none !important;
+	opacity: 1 !important;
+	transform: translateX(0) !important;
+	transform: translateY(0) !important;
+}

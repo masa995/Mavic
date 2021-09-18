@@ -1,0 +1,83 @@
+.specification {
+	&__inner {
+		display: flex;
+		padding-left: 50px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__item {
+		&:first-child,
+		&:last-child {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			min-height: 400px;
+		}
+	}
+
+	&__img-center {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	&__box {
+		position: relative;
+		width: 280px;
+		margin-top: 10px;
+
+		&::before {
+			content: " ";
+			position: absolute;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+	}
+
+	&__box-1::before {
+		background-image: url("../img/pointer-1.svg");
+		width: 229px;
+		height: 117px;
+		top: 18px;
+		right: -165px;
+	}
+
+	&__box-2::before {
+		background-image: url("../img/pointer-2.svg");
+		width: 350px;
+		height: 81px;
+		top: -40px;
+		right: -305px;
+	}
+
+	&__box-3::before {
+		background-image: url("../img/pointer-3.svg");
+		width: 258px;
+		height: 103px;
+		top: 25px;
+		left: -295px;
+	}
+
+	&__box-4::before {
+		background-image: url("../img/pointer-4.svg");
+		width: 124px;
+		height: 89px;
+		top: -67px;
+		left: -142px;
+	}
+
+	&__box-title {
+		font-size: 21px;
+		line-height: 28px;
+		font-family: "Ubuntu-Bold", sans-serif;
+		margin-bottom: 10px;
+	}
+
+	&__box-text {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 18px;
+	}
+}

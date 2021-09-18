@@ -1,0 +1,155 @@
+.contacts {
+	&__inner {
+		display: flex;
+		padding-left: 50px;
+	}
+
+	&__info {
+		max-width: 240px;
+		margin-right: 60px;
+	}
+
+	&__info-box {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__info-title {
+		line-height: 24px;
+		font-size: 21px;
+		font-family: "Ubuntu-Bold", sans-serif;
+		margin: 0 0 13px;
+	}
+
+	&__info-phone,
+	&__info-email {
+		font-size: 15px;
+		line-height: 18px;
+		position: relative;
+		display: inline-block;
+	}
+
+	&__info-phone::after,
+	&__info-email::after {
+		content: " ";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 1px;
+		transition: all 0.5s;
+		background-color: #fff;
+	}
+
+	&__info-phone:hover::after,
+	&__info-phone:focus::after,
+	&__info-email:hover::after,
+	&__info-email:focus::after {
+		width: 100%;
+	}
+
+	&__content-form {
+		width: 570px;
+		margin-right: 106px;
+	}
+
+	&__form {
+		position: relative;
+	}
+
+	&__form-title {
+		line-height: 24px;
+		font-size: 21px;
+		font-family: "Ubuntu-Bold", sans-serif;
+		margin: 0 0 13px;
+	}
+
+	&__form-text {
+		font-size: 15px;
+		line-height: 18px;
+		margin: 0 0 12px;
+	}
+
+	&__form-line {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	&__form-input-err {
+		display: block;
+	}
+
+	&__form-input,
+	&__form-textarea {
+		border: none;
+		background: rgba(0, 0, 0, 0.5);
+		font-family: "Ubuntu-Regular", sans-serif;
+		padding: 15px;
+		font-size: 13px;
+		line-height: 15px;
+		color: #fff;
+
+		&::placeholder {
+			color: rgba(#fff, 0.4);
+		}
+	}
+
+	&__form-input {
+		width: 49%;
+	}
+
+	&__form-input.error {
+		border: 1px solid #fff;
+	}
+
+	&__form-textarea {
+		min-height: 144px;
+		width: 100%;
+		resize: none;
+	}
+
+	&__form-btn {
+		text-decoration: uppercace;
+		font-size: 14px;
+		line-height: 16px;
+		font-family: "Ubuntu-Bold", sans-serif;
+		border: 1px solid #fff;
+		border-radius: 2px;
+		padding: 9px 15px;
+		color: #fff;
+		background-color: transparent;
+		cursor: pointer;
+		transition: all 0.5s;
+
+		&:hover,
+		&:focus {
+			color: #000;
+			background-color: #fff;
+		}
+	}
+
+	&__social-list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__social-item {
+		margin-bottom: 28px;
+		opacity: 1;
+		transition: all 0.5s;
+
+		&:hover,
+		&:focus {
+			opacity: 0.5;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

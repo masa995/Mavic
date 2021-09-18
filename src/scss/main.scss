@@ -1,0 +1,18 @@
+@import "mixin";
+@import "fonts";
+@import "settings";
+@import "repeat-elem";
+
+//components
+@import "./components/header";
+@import "./components/top";
+@import "./components/products";
+@import "./components/benefits";
+@import "./components/specification";
+@import "./components/questions";
+@import "./components/contacts";
+@import "./components/footer";
+
+@import "./animate";
+@import "./active";
+@import "./media";

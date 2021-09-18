@@ -1,0 +1,27 @@
+.menu__btn.active {
+	width: 40px;
+	height: 30px;
+}
+
+.menu__btn.active .menu__btn-line {
+	transform: scale(0);
+	margin-bottom: 0;
+	position: absolute;
+}
+
+.menu__btn.active .menu__btn-line:first-child {
+	transform: rotate(35deg) translate(-50%, 50%);
+	left: 45%;
+	top: 65%;
+}
+
+.menu__btn.active .menu__btn-line:last-child {
+	transform: rotate(-35deg) translate(50%, 50%);
+	right: 45%;
+	top: 65%;
+	width: 30px;
+}
+
+.menu__list.active {
+	transform: translateX(0);
+}

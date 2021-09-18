@@ -1,0 +1,52 @@
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="logo">
+        <picture class="logo__img">
+          <source media="(max-width: 600px)" type="image/webp" srcset="img/mobile/logo-mobile.webp">
+          <source srcset="img/logo.webp" type="image/webp">
+
+          <source media="(max-width: 600px)" srcset="img/mobile/logo.png">
+          <img src="img/logo.png" alt="">
+        </picture>
+      </a>
+
+      <nav class="menu">
+        <button class="menu__btn js-menu__btn" type="button" aria-label="Кнопка меню">
+          <span class="menu__btn-line"></span>
+          <span class="menu__btn-line"></span>
+          <span class="menu__btn-line"></span>
+        </button>
+
+        <ul class="menu__list js-menu__list">
+          <li class="menu__list-item">
+            <a href="#js-products" data-scroll="1" class="menu__list-link js-link">О дроне</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a href="#js-benefits" data-scroll="2" class="menu__list-link js-link">Преимущества</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a href="#js-specification" data-scroll="3" class="menu__list-link js-link">Характеристики</a>
+          </li>
+
+          <li class="menu__list-item">
+            <a href="#js-questions" data-scroll="4" class="menu__list-link js-link">Вопросы</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#js-contacts" data-scroll="5" class="menu__list-link js-link">Контакты</a>
+          </li>
+          <li class="menu__list-phone">
+            <a href="tel:80505676767" class="menu__list-link">8 (050) 567 67 67</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__info">
+        <button class="header__btn" aria-label="Заказать товар">Купить</button>
+        <a href="tel:80505676767" class="header__phone">8 (050) 567 67 67</a>
+      </div>
+    </div>
+  </div>
+</header>
