@@ -14,8 +14,6 @@ const ttf2woff2 = require('gulp-ttf2woff2');
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const svgSprite = require('gulp-svg-sprite');
-const ghPages = require('gulp-gh-pages');
-const ghpages = require('gh-pages');
 
 function browsersync() {
 	browserSync.init({
@@ -166,17 +164,11 @@ function watchFiles() {
 	watch('./src/fonts/**/*.ttf', fonts);
 }
 
-function deploy() {
-	return gulp.src('./app/**/*')
-		.pipe(ghPages());
-}
-
 exports.html = html;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.watchFiles = watchFiles;
 exports.browsersync = browsersync;
-exports.deploy = deploy;
 
 exports.default = series(cleanApp, images, imagesWebp, parallel(html, styles, scripts, fonts, resources, watchFiles, browsersync));
 exports.build = series(cleanApp, imagesBuild, imagesWebp, parallel(html, stylesBuild, scriptsBuild, fonts, resources, watchFiles, browsersync));
